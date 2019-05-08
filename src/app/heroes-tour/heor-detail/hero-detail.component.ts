@@ -3,10 +3,10 @@ import { Hero } from '../model/hero';
 
 @Component({
   selector: 'app-hero-detail',
-  templateUrl: './heor-detail.component.html',
-  styleUrls: ['./heor-detail.component.sass']
+  templateUrl: './hero-detail.component.html',
+  styleUrls: ['./hero-detail.component.sass']
 })
-export class HeorDetailComponent implements OnInit {
+export class HeroDetailComponent implements OnInit {
 
   // Hero型のオブジェクトを参照元から受け取る。
   @Input() hero: Hero;
