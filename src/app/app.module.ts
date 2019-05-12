@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes-tour/heroes/heroes.component';
 import { HeroDetailComponent } from './heroes-tour/heor-detail/hero-detail.component';
 import { MessagesComponent } from './common/messages/messages.component';
+import { DashboardComponent } from './heroes-tour/dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
