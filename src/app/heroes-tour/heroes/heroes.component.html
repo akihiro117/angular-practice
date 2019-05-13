@@ -1,3 +1,13 @@
+<div>
+  <label>Hero name:
+    <input #heroName />
+  </label>
+  <button (click)="add(heroName.value); heroName.value=''">
+    add
+  </button>
+</div>
+
+
 <h2>My heroes</h2>
 
 <ul class="heroes">
@@ -7,5 +17,3 @@
     </a>
   </li>
 </ul>
-
-<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
